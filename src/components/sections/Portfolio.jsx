@@ -6,37 +6,37 @@ export const Portfolio = () => {
     {
       title: "HAU School Department Accreditation Status",
       category: ["graphic-design"],
-      image: "/src/assets/hauAccreditationStatus.jpeg",
+      image: "/Leo_Portfolio/assets/hauAccreditationStatus.jpeg",
       tech: ["Canva"],
     },
     {
       title: "Creo Sid Logo Design",
       category: ["logo-design", "graphic-design"],
-      image: "/src/assets/creoSidLogo.JPG",
+      image: "/Leo_Portfolio/assets/creoSidLogo.JPG",
       tech: ["Canva"],
     },
     {
       title: "Hotel Booking App",
       category: ["web-development"],
-      image: "/src/assets/hotelBookingApp.png",
+      image: "/Leo_Portfolio/assets/hotelBookingApp.png",
       tech: ["ReactJS", "EthersJS", "Hardhat"],
     },
     {
       title: "Simple Projex",
       category: ["web-design", "web-development"],
-      image: "/src/assets/simpleProjex.png",
+      image: "/Leo_Portfolio/assets/simpleProjex.png",
       tech: ["React", "NextJS", "Canva", "TailwindCSS"],
     },
     {
       title: "Coffee Shop Website",
       category: ["web-design"],
-      image: "/src/assets/coffeeShopWebsite.png",
+      image: "/Leo_Portfolio/assets/coffeeShopWebsite.png",
       tech: ["HTML", "CSS", "JavaScript"],
     },
     {
       title: "Simple Projex Logo",
       category: ["logo-design", "graphic-design"],
-      image: "/src/assets/simpleProjexLogo.png",
+      image: "/Leo_Portfolio/assets/simpleProjexLogo.png",
       tech: ["Canva"],
     },
   ];
@@ -98,7 +98,7 @@ export const Portfolio = () => {
                 className="p-4 rounded-xl border border-white/10 bg-[#0b3d25]/40 hover:-translate-y-1 transition shadow-lg shadow-[#c1440e]/30"
               >
                 <img
-                  src={project.image}
+                  Leo_Portfolio={project.image}
                   alt={project.title}
                   className="rounded-xl shadow-lg mb-4 transition-transform hover:scale-105"
                 />
