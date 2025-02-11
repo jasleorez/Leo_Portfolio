@@ -12,7 +12,7 @@ export const Portfolio = () => {
     {
       title: "Creo Sid Logo Design",
       category: ["logo-design", "graphic-design"],
-      image: "./src/assets/creoSidLogo.jpg",
+      image: "./src/assets/creoSidLogo.JPG",
       tech: ["Canva"],
     },
     {
