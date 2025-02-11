@@ -1,7 +1,8 @@
 import { useState } from "react";
-import { RevealOnScroll } from "./RevealOnScroll";
+import { RevealOnScroll } from "../RevealOnScroll";
 
 export const Portfolio = () => {
+<<<<<<< HEAD
   const projects = [
     {
       title: "HAU School Department Accreditation Status",
@@ -40,6 +41,47 @@ export const Portfolio = () => {
       tech: ["Canva"],
     },
   ];
+=======
+    const projects = [
+        {
+          title: "HAU School Department Accreditation Status",
+          category: ["graphic-design"],
+          image: "/assets/hauAccreditationStatus.jpeg", // Updated path
+          tech: ["Canva"],
+        },
+        {
+          title: "Creo Sid Logo Design",
+          category: ["logo-design", "graphic-design"],
+          image: "/assets/creoSidLogo.JPG", // Updated path
+          tech: ["Canva"],
+        },
+        {
+          title: "Hotel Booking App",
+          category: ["web-development"],
+          image: "/assets/hotelBookingApp.png",
+          tech: ["ReactJS", "EthersJS", "Hardhat"],
+        },
+        {
+          title: "Simple Projex",
+          category: ["web-design", "web-development"],
+          image: "/assets/simpleProjex.png",
+          tech: ["React", "NextJS", "Canva", "TailwindCSS"],
+        },
+        {
+          title: "Coffee Shop Website",
+          category: ["web-design"],
+          image: "/assets/coffeeShopWebsite.png",
+          tech: ["HTML", "CSS", "JavaScript"],
+        },
+        {
+          title: "Simple Projex Logo",
+          category: ["logo-design", "graphic-design"],
+          image: "/assets/simpleProjexLogo.png",
+          tech: ["Canva"],
+        },
+      ];
+      
+>>>>>>> 8d2a3f2 (Save local changes before pulling)
 
   const [activeFilter, setActiveFilter] = useState("all");
   const [filteredProjects, setFilteredProjects] = useState(projects);

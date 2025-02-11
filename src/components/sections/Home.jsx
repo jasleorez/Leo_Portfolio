@@ -57,7 +57,7 @@ export const Home = () => {
               View Portfolio
             </a>
             <a href="#contact" className="border border-[#c1440e]/50 text-[#c1440e] py-3 px-6 rounded font-medium transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(193,68,14,0.2)] hover:bg-[#c1440e]/10">
-              Work with me?
+              Contact Me
             </a>
           </div>
         </div>
