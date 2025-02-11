@@ -2,86 +2,44 @@ import { useState } from "react";
 import { RevealOnScroll } from "../RevealOnScroll";
 
 export const Portfolio = () => {
-<<<<<<< HEAD
   const projects = [
     {
       title: "HAU School Department Accreditation Status",
       category: ["graphic-design"],
-      image: "/Leo_Portfolio/src/assets/hauAccreditationStatus.jpeg",
+      image: "/assets/hauAccreditationStatus.jpeg",
       tech: ["Canva"],
     },
     {
       title: "Creo Sid Logo Design",
       category: ["logo-design", "graphic-design"],
-      image: "../assets/creoSidLogo.jpg",
+      image: "/assets/creoSidLogo.JPG",
       tech: ["Canva"],
     },
     {
       title: "Hotel Booking App",
       category: ["web-development"],
-      image: "/Leo_Portfolio/src/assets/hotelBookingApp.png",
+      image: "/assets/hotelBookingApp.png",
       tech: ["ReactJS", "EthersJS", "Hardhat"],
     },
     {
       title: "Simple Projex",
       category: ["web-design", "web-development"],
-      image: "/Leo_Portfolio/src/assets/simpleProjex.png",
+      image: "/assets/simpleProjex.png",
       tech: ["React", "NextJS", "Canva", "TailwindCSS"],
     },
     {
       title: "Coffee Shop Website",
       category: ["web-design"],
-      image: "/Leo_Portfolio/src/assets/coffeeShopWebsite.png",
+      image: "/assets/coffeeShopWebsite.png",
       tech: ["HTML", "CSS", "JavaScript"],
     },
     {
       title: "Simple Projex Logo",
       category: ["logo-design", "graphic-design"],
-      image: "/Leo_Portfolio/src/assets/simpleProjexLogo.png",
+      image: "/assets/simpleProjexLogo.png",
       tech: ["Canva"],
     },
   ];
-=======
-    const projects = [
-        {
-          title: "HAU School Department Accreditation Status",
-          category: ["graphic-design"],
-          image: "/assets/hauAccreditationStatus.jpeg", // Updated path
-          tech: ["Canva"],
-        },
-        {
-          title: "Creo Sid Logo Design",
-          category: ["logo-design", "graphic-design"],
-          image: "/assets/creoSidLogo.JPG", // Updated path
-          tech: ["Canva"],
-        },
-        {
-          title: "Hotel Booking App",
-          category: ["web-development"],
-          image: "/assets/hotelBookingApp.png",
-          tech: ["ReactJS", "EthersJS", "Hardhat"],
-        },
-        {
-          title: "Simple Projex",
-          category: ["web-design", "web-development"],
-          image: "/assets/simpleProjex.png",
-          tech: ["React", "NextJS", "Canva", "TailwindCSS"],
-        },
-        {
-          title: "Coffee Shop Website",
-          category: ["web-design"],
-          image: "/assets/coffeeShopWebsite.png",
-          tech: ["HTML", "CSS", "JavaScript"],
-        },
-        {
-          title: "Simple Projex Logo",
-          category: ["logo-design", "graphic-design"],
-          image: "/assets/simpleProjexLogo.png",
-          tech: ["Canva"],
-        },
-      ];
-      
->>>>>>> 8d2a3f2 (Save local changes before pulling)
 
   const [activeFilter, setActiveFilter] = useState("all");
   const [filteredProjects, setFilteredProjects] = useState(projects);
@@ -140,7 +98,7 @@ export const Portfolio = () => {
                 className="p-4 rounded-xl border border-white/10 bg-[#0b3d25]/40 hover:-translate-y-1 transition shadow-lg shadow-[#c1440e]/30"
               >
                 <img
-                  Leo_Portfolio={project.image}
+                  src={project.image}
                   alt={project.title}
                   className="rounded-xl shadow-lg mb-4 transition-transform hover:scale-105"
                 />
