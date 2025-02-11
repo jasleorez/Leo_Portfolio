@@ -6,37 +6,37 @@ export const Portfolio = () => {
     {
       title: "HAU School Department Accreditation Status",
       category: ["graphic-design"],
-      image: "/Leo_Portfolio/assets/hauAccreditationStatus.jpeg",
+      image: "/Leo_Portfolio/src/assets/hauAccreditationStatus.jpeg",
       tech: ["Canva"],
     },
     {
       title: "Creo Sid Logo Design",
       category: ["logo-design", "graphic-design"],
-      image: "/Leo_Portfolio/assets/creoSidLogo.JPG",
+      image: "/Leo_Portfolio/src/assets/creoSidLogo.JPG",
       tech: ["Canva"],
     },
     {
       title: "Hotel Booking App",
       category: ["web-development"],
-      image: "/Leo_Portfolio/assets/hotelBookingApp.png",
+      image: "/Leo_Portfolio/src/assets/hotelBookingApp.png",
       tech: ["ReactJS", "EthersJS", "Hardhat"],
     },
     {
       title: "Simple Projex",
       category: ["web-design", "web-development"],
-      image: "/Leo_Portfolio/assets/simpleProjex.png",
+      image: "/Leo_Portfolio/src/assets/simpleProjex.png",
       tech: ["React", "NextJS", "Canva", "TailwindCSS"],
     },
     {
       title: "Coffee Shop Website",
       category: ["web-design"],
-      image: "/Leo_Portfolio/assets/coffeeShopWebsite.png",
+      image: "/Leo_Portfolio/src/assets/coffeeShopWebsite.png",
       tech: ["HTML", "CSS", "JavaScript"],
     },
     {
       title: "Simple Projex Logo",
       category: ["logo-design", "graphic-design"],
-      image: "/Leo_Portfolio/assets/simpleProjexLogo.png",
+      image: "/Leo_Portfolio/src/assets/simpleProjexLogo.png",
       tech: ["Canva"],
     },
   ];
