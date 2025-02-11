@@ -6,37 +6,37 @@ export const Portfolio = () => {
     {
       title: "HAU School Department Accreditation Status",
       category: ["graphic-design"],
-      image: "/public/assets/hauAccreditationStatus.jpeg",
+      image: "/src/assets/hauAccreditationStatus.jpeg",
       tech: ["Canva"],
     },
     {
       title: "Creo Sid Logo Design",
       category: ["logo-design", "graphic-design"],
-      image: "/public/assets/creoSidLogo.JPG",
+      image: "/src/assets/creoSidLogo.JPG",
       tech: ["Canva"],
     },
     {
       title: "Hotel Booking App",
       category: ["web-development"],
-      image: "/public/assets/hotelBookingApp.png",
+      image: "/src/assets/hotelBookingApp.png",
       tech: ["ReactJS", "EthersJS", "Hardhat"],
     },
     {
       title: "Simple Projex",
       category: ["web-design", "web-development"],
-      image: "/public/assets/simpleProjex.png",
+      image: "/src/assets/simpleProjex.png",
       tech: ["React", "NextJS", "Canva", "TailwindCSS"],
     },
     {
       title: "Coffee Shop Website",
       category: ["web-design"],
-      image: "/public/assets/coffeeShopWebsite.png",
+      image: "/src/assets/coffeeShopWebsite.png",
       tech: ["HTML", "CSS", "JavaScript"],
     },
     {
       title: "Simple Projex Logo",
       category: ["logo-design", "graphic-design"],
-      image: "/public/assets/simpleProjexLogo.png",
+      image: "/src/assets/simpleProjexLogo.png",
       tech: ["Canva"],
     },
   ];
