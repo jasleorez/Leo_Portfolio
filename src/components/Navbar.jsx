@@ -10,7 +10,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
       <div className="max-w-5xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <a href="#home" className="flex items-center space-x-2">
-            <img src="/assets/LEO.svg" alt="Logo" className="h-10 w-10" />
+            <img src="https://github.com/jasleorez/Leo_Portfolio/blob/main/assets/LEO.svg" alt="Logo" className="h-10 w-10" />
             <span className="font-mono text-xl font-bold text-[#ededed]">
               <span className="text-[#c1440e]">Leo</span>
             </span>
