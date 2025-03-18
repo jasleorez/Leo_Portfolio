@@ -13,7 +13,7 @@ export const About = () => {
             {/* Left Section - About Content */}
             <div>
               <p className="text-[#ededed] mb-4">
-                I'm <b>Jasper Leonard Gutierrez</b>, also known as 
+                Hi! I'm <b>Jasper Leonard Gutierrez</b>, also known as 
                 <span className="text-[#c1440e] font-semibold"> Leo</span>. I'm a self-taught graphic designer and aspiring front-end developer with a passion for UX/UI design. 
                 I’m currently pursuing a <b>B.S. in Information Technology</b> at Holy Angel University, specializing in Web Development.
               </p>
