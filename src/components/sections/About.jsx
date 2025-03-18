@@ -38,7 +38,7 @@ export const About = () => {
 
             {/* Right Section - Profile Picture */}
             <div className="text-center">
-              <img src="/assets/Leo.jpeg" alt="Leo's Profile Picture" className="rounded-3 w-full max-w-xs mx-auto shadow-lg shadow-[#0b3d25]" />
+              <img src="https://github.com/jasleorez/Leo_Portfolio/blob/main/assets/Leo.jpeg" alt="Leo's Profile Picture" className="rounded-3 w-full max-w-xs mx-auto shadow-lg shadow-[#0b3d25]" />
             </div>
           </div>
 
