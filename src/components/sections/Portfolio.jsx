@@ -30,7 +30,7 @@ export const Portfolio = () => {
     {
       title: "Coffee Shop Website",
       category: ["web-design"],
-      image: "/assets/coffeeShopWebsite.png",
+      image: "https://github.com/jasleorez/Leo_Portfolio/blob/main/assets/coffeeShopWebsite.png?raw=true",
       tech: ["HTML", "CSS", "JavaScript"],
     },
     {
