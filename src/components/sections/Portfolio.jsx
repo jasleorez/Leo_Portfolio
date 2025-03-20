@@ -12,19 +12,19 @@ export const Portfolio = () => {
     {
       title: "Creo Sid Logo Design",
       category: ["logo-design", "graphic-design"],
-      image: "/assets/creoSidLogo.JPG",
+      image: "https://github.com/jasleorez/Leo_Portfolio/blob/main/assets/creoSidLogo.JPG?raw=true",
       tech: ["Canva"],
     },
     {
       title: "Hotel Booking App",
       category: ["web-development"],
-      image: "/assets/hotelBookingApp.png",
+      image: "https://github.com/jasleorez/Leo_Portfolio/blob/main/assets/hotelBookingApp.png?raw=true",
       tech: ["ReactJS", "EthersJS", "Hardhat"],
     },
     {
       title: "Simple Projex",
       category: ["web-design", "web-development"],
-      image: "/assets/simpleProjex.png",
+      image: "https://github.com/jasleorez/Leo_Portfolio/blob/main/assets/simpleProjex.png?raw=true",
       tech: ["React", "NextJS", "Canva", "TailwindCSS"],
     },
     {
@@ -36,7 +36,7 @@ export const Portfolio = () => {
     {
       title: "Simple Projex Logo",
       category: ["logo-design", "graphic-design"],
-      image: "/assets/simpleProjexLogo.png",
+      image: "https://github.com/jasleorez/Leo_Portfolio/blob/main/assets/simpleProjexLogo.png?raw=true",
       tech: ["Canva"],
     },
   ];
