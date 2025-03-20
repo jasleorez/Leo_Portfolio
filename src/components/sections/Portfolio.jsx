@@ -6,10 +6,7 @@ export const Portfolio = () => {
     {
       title: "HAU School Department Accreditation Status",
       category: ["graphic-design"],
-
-
       image: "https://github.com/jasleorez/Leo_Portfolio/blob/main/assets/hauAccreditationStatus.jpeg?raw=true",
-
       tech: ["Canva"],
     },
     {
