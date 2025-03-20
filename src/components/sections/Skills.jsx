@@ -7,7 +7,7 @@ const skills = [
   { name: "CSS", proficiency: "80%", icon: "https://img.icons8.com/?size=100&id=21278&format=png&color=000000" },
   { name: "JavaScript", proficiency: "60%", icon: "https://img.icons8.com/?size=100&id=PXTY4q2Sq2lG&format=png&color=000000" },
   { name: "React", proficiency: "85%", icon: "https://img.icons8.com/?size=100&id=123603&format=png&color=000000" },
-  { name: "Next.js", proficiency: "70%", icon: "https://img.icons8.com/?size=100&id=MWiBjkuHeMVq&format=png&color=000000" },
+  { name: "Next.js", proficiency: "50%", icon: "https://img.icons8.com/?size=100&id=MWiBjkuHeMVq&format=png&color=000000" },
   { name: "WordPress", proficiency: "75%", icon: "https://img.icons8.com/?size=100&id=13664&format=png&color=000000" },
 ];
 
