@@ -76,7 +76,7 @@ export const About = () => {
               
             </div>
             <div>
-                <h5 className="text-[#c1440e] mt-4 text-center"> See More </h5>
+              <a href="#moreabout"> <h5 className="text-[#c1440e] mt-4 text-center hover:underline hover:text-[#ededed]" > See More </h5> </a> 
               </div>
           </div>
         </div>
