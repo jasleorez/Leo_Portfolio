@@ -73,6 +73,9 @@ export const About = () => {
                   <p>Supported the lab custodian as a Student Assistant of Computer Engineering laboratory. Responsibilities include equipment management and providing support for students.</p>
                 </div>
               </div>
+              <div>
+                <h5 className="text-[#c1440e] mt-4 text-center"> See More </h5>
+              </div>
             </div>
           </div>
         </div>
