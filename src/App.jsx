@@ -11,7 +11,7 @@ import { Portfolio } from "./components/sections/Portfolio";
 import { Skills } from "./components/sections/Skills";
 import { Services } from "./components/sections/Services";
 import { Contact } from "./components/sections/Contact";
-import { Footer } from "./components/Footer"; 
+import { Footer } from "./components/Footer";
 
 // New about page
 import AboutPage from "./pages/AboutPage";
@@ -24,9 +24,8 @@ function MainPage({ isLoaded, setIsLoaded, menuOpen, setMenuOpen }) {
     <>
       {!isLoaded && <LoadingScreen onComplete={() => setIsLoaded(true)} />}
       <div
-        className={`min-h-screen transition-opacity duration-700 ${
-          isLoaded ? "opacity-100" : "opacity-0"
-        } bg-black text-gray-100`}
+        className={`min-h-screen transition-opacity duration-700 ${isLoaded ? "opacity-100" : "opacity-0"
+          } bg-black text-gray-100`}
       >
         <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
@@ -60,17 +59,17 @@ function App() {
             />
           }
         />
-       <Route
-  path="/about"
-  element={
-    <AboutPage
-      isLoaded={isLoaded}
-      setIsLoaded={setIsLoaded}
-      menuOpen={menuOpen}
-      setMenuOpen={setMenuOpen}
-    />
-  }
-/>
+        <Route
+          path="/about"
+          element={
+            <AboutPage
+              isLoaded={isLoaded}
+              setIsLoaded={setIsLoaded}
+              menuOpen={menuOpen}
+              setMenuOpen={setMenuOpen}
+            />
+          }
+        />
       </Routes>
     </Router>
   );

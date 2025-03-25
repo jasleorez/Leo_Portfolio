@@ -58,9 +58,6 @@ const AboutNavbar = ({ menuOpen, setMenuOpen }) => {
           </div>
         </div>
       </nav>
-
-      {/* Mobile Menu */}
-      <MobileMenuAboutPage menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
     </>
   );
 };

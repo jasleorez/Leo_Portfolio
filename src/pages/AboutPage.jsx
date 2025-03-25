@@ -10,6 +10,7 @@ import { Contact } from "../components/sections/Contact";
 import { GallerySection } from "../components/sections/GallerySection";
 import { Footer } from "../components/Footer";
 import { Testimonial } from "../components/sections/Testimonial";
+import { MobileMenuAboutPage } from "../components/MobileMenuAboutPage";
 
 import "../App.css";
 import "../index.css";
@@ -24,6 +25,7 @@ const AboutPage = ({ isLoaded, setIsLoaded, menuOpen, setMenuOpen }) => {
         } bg-[#1a1a1a] text-[#ededed]`}
       >
         <AboutNavbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+        <MobileMenuAboutPage menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <Me />
         <Certifications />
         <Works />

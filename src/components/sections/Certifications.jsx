@@ -19,28 +19,55 @@ const certificates = [
     title: "GA4 for Power Users",
     link: "https://skillshop.credential.net/7d02fef8-a501-470c-baaa-24772a0baad3#acc.IRCykB7F",
   },
+  {
+    title: "SEO Badge - HubSpot Academy",
+    link: "https://app.hubspot.com/academy/achievements/6ybfx2wy/en/1/red-quartz/seo",
+    
+    alt: "SEO Badge",
+  },
+  {
+    title: "SEO II Badge - HubSpot Academy",
+    link: "https://app.hubspot.com/academy/achievements/pl22h2tg/en/1/jasper-leonard-gutierrez/seo-ii",
+   
+    alt: "SEO II Badge",
+  },
 ];
+
 
 export const Certifications = () => {
   return (
     <section id="certifications" className="py-16 bg-[#1a1a1a] text-[#ededed]">
       <div className="max-w-5xl mx-auto px-4">
-        <h2 className="text-4xl font-bold mb-10 text-center bg-gradient-to-r from-[#c1440e] to-[#0b3d25] text-transparent bg-clip-text">Certifications</h2>
+        <h2 className="text-4xl font-bold mb-10 text-center bg-gradient-to-r from-[#c1440e] to-[#0b3d25] text-transparent bg-clip-text">
+          Certifications
+        </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {certificates.map((cert, index) => (
-            <a
-              key={index}
-              href={cert.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block border border-[#c1440e] hover:bg-[#0b3d25] transition-colors duration-300 p-6 rounded-lg"
-            >
-              <h3 className="text-xl font-semibold mb-2">{cert.title}</h3>
-              <p className="text-sm text-[#c1440e] hover:text-[#ededed] underline">View Certificate →</p>
-            </a>
+            cert.image ? (
+              <div key={index} className="academy-badge">
+                <a
+                  href={cert.link}
+                  title={cert.title}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                </a>
+              </div>
+            ) : (
+              <a
+                key={index}
+                href={cert.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block border border-[#c1440e] hover:bg-[#0b3d25] transition-colors duration-300 p-6 rounded-lg"
+              >
+                <h3 className="text-xl font-semibold mb-2">{cert.title}</h3>
+                <p className="text-sm text-[#c1440e] hover:text-[#ededed] underline">View Certificate →</p>
+              </a>
+            )
           ))}
         </div>
       </div>
     </section>
   );
-}
+};
