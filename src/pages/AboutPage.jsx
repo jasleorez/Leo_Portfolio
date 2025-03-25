@@ -3,6 +3,7 @@ import React from "react";
 import AboutNavbar from "../components/AboutNavbar";
 import { LoadingScreen } from "../components/LoadingScreen";
 import { Me } from "../components/sections/Me";
+import { Certifications } from "../components/sections/Certifications";
 import { Works } from "../components/sections/Works";
 import { SkillsAbout } from "../components/sections/SkillsAbout";
 import { Contact } from "../components/sections/Contact";
@@ -24,6 +25,7 @@ const AboutPage = ({ isLoaded, setIsLoaded, menuOpen, setMenuOpen }) => {
       >
         <AboutNavbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <Me />
+        <Certifications />
         <Works />
         <SkillsAbout />
         <GallerySection />
