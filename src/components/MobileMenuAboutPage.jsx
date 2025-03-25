@@ -24,7 +24,7 @@ export const MobileMenuAboutPage = ({ menuOpen, setMenuOpen }) => {
             <Link
               to="/"
               onClick={() => setMenuOpen(false)}
-              className="text-2xl font-semibold text-[#ededed] my-6 transform transition-transform duration-300
+              className="text-2xl font-semibold text-[#ededed] my-8 transform transition-transform duration-300
                           hover:text-[#c1440e]"
             >
               {item}
@@ -34,7 +34,7 @@ export const MobileMenuAboutPage = ({ menuOpen, setMenuOpen }) => {
             <a
               href={`#${item.toLowerCase()}`}
               onClick={() => setMenuOpen(false)}
-              className="text-2xl font-semibold text-[#ededed] my-6 transform transition-transform duration-300
+              className="text-2xl font-semibold text-[#ededed] my-8 transform transition-transform duration-300
                           opacity-100 translate-y-0 hover:text-[#c1440e]"
             >
               {item}
