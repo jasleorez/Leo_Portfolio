@@ -22,14 +22,22 @@ const certificates = [
   {
     title: "SEO Badge - HubSpot Academy",
     link: "https://app.hubspot.com/academy/achievements/6ybfx2wy/en/1/red-quartz/seo",
-    
-    alt: "SEO Badge",
   },
   {
     title: "SEO II Badge - HubSpot Academy",
     link: "https://app.hubspot.com/academy/achievements/pl22h2tg/en/1/jasper-leonard-gutierrez/seo-ii",
-   
-    alt: "SEO II Badge",
+  },
+  {
+  title: "Certificate of Attendance (RH124-8.2)",
+    link: "https://github.com/jasleorez/Leo_Portfolio/blob/main/assets/'Certificate%20of%20Attendance%20(RH124-8.2).png?raw=true",
+  },
+  {
+    title: "JavaScript Algorithms & Data Structures",
+    link: "https://github.com/jasleorez/Leo_Portfolio/blob/main/assets/Leo_JavaScript_Algorithms_Data_Structures_CERTIFICATE.png?raw=true",
+  },
+  {
+    title: "Responsive Web Design",
+    link: "https://github.com/jasleorez/Leo_Portfolio/blob/main/assets/Leo_Responsive_Web_Design.png?raw=true",
   },
 ];
 
