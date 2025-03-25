@@ -62,7 +62,7 @@ export const SkillsAbout = () => {
         <section id="skillsabout" className="bg-[#1a1a1a] text-white py-16 px-6">
             <div className="max-w-7xl mx-auto text-center mb-12">
                 <h2 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#c1440e] to-[#0b3d25]">
-                    I can Execute...
+                    I have Accumulated...
                 </h2>
                 <p className="mt-2 text-lg text-[#ededed]">
                     I have a diverse skill set in programming and design, allowing me to create both functional and visually compelling projects.

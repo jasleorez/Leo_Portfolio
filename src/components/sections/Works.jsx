@@ -41,7 +41,7 @@ export function Works() {
     >
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-extrabold bg-gradient-to-r from-[#c1440e] to-[#0b3d25] text-transparent bg-clip-text mb-12 text-center">
-          I have Accomplished...
+          I can Execute...
         </h2>
 
         {/* First 3 cards in grid */}
