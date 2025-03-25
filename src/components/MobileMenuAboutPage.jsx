@@ -24,8 +24,8 @@ export const MobileMenuAboutPage = ({ menuOpen, setMenuOpen }) => {
             <Link
               to="/"
               onClick={() => setMenuOpen(false)}
-              className="text-2xl font-semibold text-[#ededed] mt-7 my-8 transform transition-transform duration-300
-                          hover:text-[#c1440e]"
+              className="text-2xl font-semibold text-[#ededed] my-8 transform transition-transform duration-300
+                          hover:text-[#c1440e] menu-item"  {/* Added custom class */}
             >
               {item}
             </Link>
@@ -34,8 +34,8 @@ export const MobileMenuAboutPage = ({ menuOpen, setMenuOpen }) => {
             <a
               href={`#${item.toLowerCase()}`}
               onClick={() => setMenuOpen(false)}
-              className="text-2xl font-semibold text-[#ededed] my-8 transform mt-7 transition-transform duration-300
-                          opacity-100 translate-y-0 hover:text-[#c1440e]"
+              className="text-2xl font-semibold text-[#ededed] my-8 transform transition-transform duration-300
+                          opacity-100 translate-y-0 hover:text-[#c1440e] menu-item"  {/* Added custom class */}
             >
               {item}
             </a>
