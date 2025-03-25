@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-export const Navbar = ({ menuOpen, setMenuOpen }) => {
+const AboutNavbar = ({ menuOpen, setMenuOpen }) => {
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "";
   }, [menuOpen]);
@@ -9,7 +9,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
     <nav className="fixed top-0 w-full z-40 bg-[#ededed]/40 backdrop-blur-md border-b border-[#c1440e] shadow-lg">
       <div className="max-w-5xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
-          <a href="#home" className="flex items-center space-x-2">
+          <a href="/" className="flex items-center space-x-2">
             <img
               src="https://raw.githubusercontent.com/jasleorez/Leo_Portfolio/0614cb8fc5baedc28fb650ec3321326cfba44fea/assets/LEO.svg"
               alt="Logo"
@@ -28,23 +28,20 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
           </div>
 
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#home" className="text-[#1a1a1a] hover:text-[#c1440e] transition-colors">
+            <a href="/" className="text-[#1a1a1a] hover:text-[#c1440e] transition-colors">
               Home
             </a>
-            <a href="#about" className="text-[#1a1a1a] hover:text-[#c1440e] transition-colors">
-              About
+            <a href="#me" className="text-[#1a1a1a] hover:text-[#c1440e] transition-colors">
+              Me
             </a>
-            <a href="#skills" className="text-[#1a1a1a] hover:text-[#c1440e] transition-colors">
+            <a href="#works" className="text-[#1a1a1a] hover:text-[#c1440e] transition-colors">
+              Works
+            </a>
+            <a href="#skillsabout" className="text-[#1a1a1a] hover:text-[#c1440e] transition-colors">
               Skills
             </a>
-            <a href="#services" className="text-[#1a1a1a] hover:text-[#c1440e] transition-colors">
-              Services
-            </a>
-            <a href="#portfolio" className="text-[#1a1a1a] hover:text-[#c1440e] transition-colors">
-              Portfolio
-            </a>
-            <a href="#testimonial" className="text-[#1a1a1a] hover:text-[#c1440e] transition-colors">
-              Testimonial
+            <a href="#gallery" className="text-[#1a1a1a] hover:text-[#c1440e] transition-colors">
+              Gallery
             </a>
             <a href="#contact" className="text-[#1a1a1a] hover:text-[#c1440e] transition-colors">
               Contact
@@ -55,3 +52,5 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
     </nav>
   );
 };
+
+export default AboutNavbar;

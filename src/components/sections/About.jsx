@@ -13,8 +13,8 @@ export const About = () => {
             {/* Left Section - About Content */}
             <div>
               <p className="text-[#ededed] mb-4">
-                Hi! I'm <b>Jasper Leonard Gutierrez</b>, also known as 
-                <span className="text-[#c1440e] font-semibold"> Leo</span>. I'm a self-taught graphic designer and aspiring front-end developer with a passion for UX/UI design. 
+                Hi! I'm <b>Jasper Leonard Gutierrez</b>, also known as
+                <span className="text-[#c1440e] font-semibold"> Leo</span>. I'm a self-taught graphic designer and aspiring front-end developer with a passion for UX/UI design.
                 I’m currently pursuing a <b>B.S. in Information Technology</b> at Holy Angel University, specializing in Web Development.
               </p>
               <p className="text-[#ededed] mb-4">
@@ -51,12 +51,12 @@ export const About = () => {
             <div className="p-6 rounded-xl border border-[#c1440e] hover:-translate-y-1 transition-all">
               <div className="space-y-4 text-[#ededed]">
                 <div>
-                  <h4 className="font-semibold text-[#c1440e]">Internship as Front-end Developer <br/>(January 2024)</h4>
+                  <h4 className="font-semibold text-[#c1440e]">Internship as Front-end Developer <br />(January 2024)</h4>
                   <p>Contributed to the development of a landing page and designed the UI/UX for a construction contract management software for a U.S.-based startup.</p>
                 </div>
 
                 <div>
-                  <h4 className="font-semibold text-[#c1440e]">Graphic Designer - Marketing Office (HAU) <br/>(April-June 2024)</h4>
+                  <h4 className="font-semibold text-[#c1440e]">Graphic Designer - Marketing Office (HAU) <br />(April-June 2024)</h4>
                   <p>Assisted as a Student Assistant in managing university social media posts and capturing photo documentation.</p>
                 </div>
               </div>
@@ -65,20 +65,23 @@ export const About = () => {
             <div className="p-6 rounded-xl border border-[#c1440e] hover:-translate-y-1 transition-all">
               <div className="space-y-4 text-[#ededed]">
                 <div>
-                  <h4 className="font-semibold text-[#c1440e]">Logo Design - Startup Event Team <br/>(2024)</h4>
+                  <h4 className="font-semibold text-[#c1440e]">Logo Design - Startup Event Team <br />(2024)</h4>
                   <p>Designed a logo for an event team, incorporating a professional aesthetic while thoughtfully integrating the team's story and identity into the design.</p>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-[#c1440e]">Lab Custodian - Computer Engineering Lab (HAU) <br/>(2023-2024)</h4>
+                  <h4 className="font-semibold text-[#c1440e]">Lab Custodian - Computer Engineering Lab (HAU) <br />(2023-2024)</h4>
                   <p>Supported the lab custodian as a Student Assistant of Computer Engineering laboratory. Responsibilities include equipment management and providing support for students.</p>
                 </div>
               </div>
-              
             </div>
-            <div>
-              <a href="#moreabout"> <h5 className="text-[#c1440e] mt-4 text-center hover:underline hover:text-[#ededed]" > See More </h5> </a> 
-              </div>
           </div>
+          <div className="flex  mt-10">
+  <a href="/about">
+    <button className="bg-[#c1440e] text-[#ededed] px-5 py-2 rounded-md font-medium hover:bg-[#ededed] hover:text-[#1a1a1a] transition">
+      Learn More
+    </button>
+  </a>
+</div>
         </div>
       </RevealOnScroll>
     </section>

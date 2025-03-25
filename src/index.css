@@ -48,3 +48,21 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* index.css */
+.perspective {
+  perspective: 1000px;
+}
+
+.transform-style-preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.swiper-pagination {
+  bottom: -25px !important;
+}
+
