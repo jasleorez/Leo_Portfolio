@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 export const MobileMenuAboutPage = ({ menuOpen, setMenuOpen }) => {
   return (
@@ -16,15 +17,29 @@ export const MobileMenuAboutPage = ({ menuOpen, setMenuOpen }) => {
       </button>
 
       {["Home", "Me", "Certifications", "Works", "Skills", "Gallery", "Testimonials", "Contact"].map((item) => (
-        <a
-          key={item}
-          href={`#${item.toLowerCase()}`}
-          onClick={() => setMenuOpen(false)}
-          className={`text-2xl font-semibold text-[#ededed] my-4 transform transition-transform duration-300
-                      ${menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"} hover:text-[#c1440e]`}
-        >
-          {item}
-        </a>
+        <div key={item}>
+          {item === "Home" ? (
+            // For Home, use react-router Link for page navigation
+            <Link
+              to="/"
+              onClick={() => setMenuOpen(false)}
+              className="text-2xl font-semibold text-[#ededed] my-4 transform transition-transform duration-300
+                          hover:text-[#c1440e]"
+            >
+              {item}
+            </Link>
+          ) : (
+            // For other items, use anchor links with section IDs
+            <a
+              href={`#${item.toLowerCase()}`}
+              onClick={() => setMenuOpen(false)}
+              className="text-2xl font-semibold text-[#ededed] my-4 transform transition-transform duration-300
+                          opacity-100 translate-y-0 hover:text-[#c1440e]"
+            >
+              {item}
+            </a>
+          )}
+        </div>
       ))}
     </div>
   );
