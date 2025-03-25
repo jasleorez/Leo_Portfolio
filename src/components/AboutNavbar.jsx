@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { MobileMenuAboutPage } from "./MobileMenuAboutPage"; // Import the new mobile menu component
+
 
 const AboutNavbar = ({ menuOpen, setMenuOpen }) => {
   useEffect(() => {
@@ -30,7 +30,7 @@ const AboutNavbar = ({ menuOpen, setMenuOpen }) => {
             </div>
 
             <div className="hidden md:flex items-center space-x-8">
-              <a href="https://leoportfolio-tau.vercel.app/" className="text-[#1a1a1a] hover:text-[#c1440e] transition-colors">
+              <a href="/" className="text-[#1a1a1a] hover:text-[#c1440e] transition-colors">
                 Home
               </a>
               <a href="#me" className="text-[#1a1a1a] hover:text-[#c1440e] transition-colors">
