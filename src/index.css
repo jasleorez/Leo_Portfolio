@@ -66,3 +66,7 @@ body {
   bottom: -25px !important;
 }
 
+/* Add this to your CSS file (e.g., App.css) */
+.menu-item {
+  line-height: 2.5; /* Adjust this value to get the spacing you want */
+}

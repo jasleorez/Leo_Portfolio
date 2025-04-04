@@ -45,6 +45,13 @@ const projects = [
     description: "A bold and clean logo identity created for the Simple Projex branding initiative.",
   },
   {
+    title: "GLADLY, I GOT TO KNOW YOU MORE BAGUIO",
+      category: ["video-editing"],
+      video: "https://www.youtube.com/embed/TrtBCvmGbzc",
+      tech: ["Capcut"],
+      description: "Instead of chasing the usual tourist spots, I spent a day in Baguio living like a local—with my three amazing girls",
+  },
+  {
     title: "My Sister went to TAIWAN!! (Day1)",
     category: ["video-editing"],
     video: "https://www.youtube.com/embed/sDn249_qNtk",
@@ -55,6 +62,13 @@ const projects = [
     title: "My Sister went to TAIWAN!! (Day2)",
     category: ["video-editing"],
     video: "https://www.youtube.com/embed/OJhA8r4SDnk",
+    tech: ["Capcut"],
+    description: "A short video editing project about my sister's trip to Taiwan, using Capcut software.",
+  },
+  {
+    title: "My Sister went to TAIWAN!! (Day3)",
+    category: ["video-editing"],
+    video: "https://www.youtube.com/embed/eHmz5_KRTy8",
     tech: ["Capcut"],
     description: "A short video editing project about my sister's trip to Taiwan, using Capcut software.",
   },

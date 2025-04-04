@@ -27,6 +27,7 @@ export const Portfolio = () => {
       image: "https://github.com/jasleorez/Leo_Portfolio/blob/main/assets/simpleProjex.png?raw=true",
       tech: ["React", "NextJS", "Canva", "TailwindCSS"],
     },
+    
     {
       title: "Coffee Shop Website",
       category: ["web-design"],
@@ -38,6 +39,30 @@ export const Portfolio = () => {
       category: ["logo-design", "graphic-design"],
       image: "https://github.com/jasleorez/Leo_Portfolio/blob/main/assets/simpleProjexLogo.png?raw=true",
       tech: ["Canva"],
+    },
+    {
+      title: "GLADLY, I GOT TO KNOW YOU MORE BAGUIO",
+      category: ["video-editing"],
+      video: "https://www.youtube.com/embed/TrtBCvmGbzc",
+      tech: ["Capcut"],
+    },
+    {
+      title: "My Sister went to TAIWAN!! (Day1)",
+      category: ["video-editing"],
+      video: "https://www.youtube.com/embed/sDn249_qNtk",
+      tech: ["Capcut"],
+    },
+    {
+      title: "My Sister went to TAIWAN!! (Day2)",
+      category: ["video-editing"],
+      video: "https://www.youtube.com/embed/OJhA8r4SDnk",
+      tech: ["Capcut"],
+    },
+    {
+      title: "My Sister went to TAIWAN!! (Day3)",
+      category: ["video-editing"],
+      video: "https://www.youtube.com/embed/eHmz5_KRTy8",
+      tech: ["Capcut"],
     },
   ];
 
@@ -74,6 +99,7 @@ export const Portfolio = () => {
               { name: "Logo Design", filter: "logo-design" },
               { name: "Web Design", filter: "web-design" },
               { name: "Web Development", filter: "web-development" },
+              { name: "Video Editing", filter: "video-editing" },
             ].map(({ name, filter }) => (
               <button
                 key={filter}
@@ -97,12 +123,32 @@ export const Portfolio = () => {
                 key={index}
                 className="p-4 rounded-xl border border-white/10 bg-[#0b3d25]/40 hover:-translate-y-1 transition shadow-lg shadow-[#c1440e]/30"
               >
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="rounded-xl shadow-lg mb-4 transition-transform hover:scale-105"
-                />
-                <h3 className="text-xl font-bold text-white">{project.title}</h3>
+                {/* Image or Video */}
+                {project.image ? (
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="rounded-xl shadow-lg mb-4 transition-transform hover:scale-105"
+                  />
+                ) : project.video ? (
+                  <div className="relative w-full h-0 mb-4" style={{ paddingBottom: "56.25%" }}>
+                    <iframe
+                      src={project.video}
+                      title={project.title}
+                      className="absolute top-0 left-0 w-full h-full rounded-xl shadow-lg"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    />
+                  </div>
+                ) : null}
+
+                <h3 className="text-xl font-bold text-white flex items-center">
+                  {project.title}
+                  {project.video && (
+                    <span className="ml-2 bg-red-600 text-white text-xs px-2 py-0.5 rounded-full">Video</span>
+                  )}
+                </h3>
                 <p className="text-gray-400 text-sm mb-2">{project.category.join(", ")}</p>
 
                 {/* Tech Stack Badges */}
@@ -122,7 +168,11 @@ export const Portfolio = () => {
 
           {/* See More */}
           <div className="text-center mt-8">
-            <a href="https://drive.google.com/drive/folders/1GIXnHk9HuN6WSb-1Vw69SykBGuYO-dx3?usp=sharing" className="text-[#c1440e] hover:text-orange-300 text-lg underline transition">
+            <a
+              href="https://drive.google.com/drive/folders/1GIXnHk9HuN6WSb-1Vw69SykBGuYO-dx3?usp=sharing"
+              className="text-[#c1440e] hover:text-orange-300 text-lg underline transition"
+              target="_blank" rel="noopener noreferrer"
+            >
               See More
             </a>
           </div>

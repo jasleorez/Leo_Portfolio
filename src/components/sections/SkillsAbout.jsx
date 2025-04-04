@@ -19,6 +19,11 @@ const skills = [
         icon: "https://img.icons8.com/?size=100&id=iWw83PVcBpLw&format=png&color=000000",
     },
     {
+        name: "Capcut",
+        level: "85%",
+        icon: "https://images.seeklogo.com/logo-png/43/2/capcut-logo-png_seeklogo-437025.png",
+    },
+    {
         name: "HTML",
         level: "90%",
         icon: "https://img.icons8.com/?size=100&id=20909&format=png&color=C1440E",

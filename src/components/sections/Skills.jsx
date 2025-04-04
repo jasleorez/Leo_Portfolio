@@ -3,6 +3,7 @@ import { RevealOnScroll } from "../RevealOnScroll";
 const skills = [
   { name: "Figma", proficiency: "80%", icon: "https://img.icons8.com/?size=100&id=zfHRZ6i1Wg0U&format=png&color=000000" },
   { name: "Canva", proficiency: "95%", icon: "https://img.icons8.com/?size=100&id=iWw83PVcBpLw&format=png&color=000000" },
+  { name: "Capcut", proficiency: "85%", icon: "https://images.seeklogo.com/logo-png/43/2/capcut-logo-png_seeklogo-437025.png" },
   { name: "HTML", proficiency: "90%", icon: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000" },
   { name: "CSS", proficiency: "80%", icon: "https://img.icons8.com/?size=100&id=21278&format=png&color=000000" },
   { name: "JavaScript", proficiency: "60%", icon: "https://img.icons8.com/?size=100&id=PXTY4q2Sq2lG&format=png&color=000000" },

@@ -31,6 +31,12 @@ const services = [
       "Make your brand unforgettable with a distinctive logo that captures your identity and leaves a lasting impression.",
     icon: "https://img.icons8.com/?size=100&id=25987&format=png&color=c1440e",
   },
+  {
+    title: "Video Editing",
+    description:
+      "Create captivating and engaging video content that captures your audience and leaves a lasting impression.",
+    icon: "https://img.icons8.com/?size=100&id=15110&format=png&color=c1440e",
+  },
 ];
 
 export function Works() {
