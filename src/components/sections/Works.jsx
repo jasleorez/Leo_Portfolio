@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 const services = [
   {
@@ -52,7 +52,7 @@ export function Works() {
 
         {/* First 3 cards in grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-          {services.slice().map((service, index) => (
+          {services.map((service, index) => (
             <FlipCard key={index} service={service} />
           ))}
         </div>
@@ -62,9 +62,28 @@ export function Works() {
 }
 
 function FlipCard({ service }) {
+  const [isFlipped, setIsFlipped] = useState(false);
+
+  const toggleFlip = () => {
+    setIsFlipped(!isFlipped);
+  };
+
+  const handleTouchStart = (e) => {
+    // Prevent multiple touch events from firing rapidly
+    toggleFlip();
+  };
+
   return (
-    <div className="group perspective w-full sm:w-72">
-      <div className="relative h-72 transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
+    <div
+      className="group perspective w-full sm:w-72"
+      onClick={toggleFlip} // Trigger flip on click (desktop)
+      onTouchStart={handleTouchStart} // Trigger flip on touch (mobile)
+    >
+      <div
+        className={`relative h-72 transition-transform duration-700 transform-style-preserve-3d ${
+          isFlipped ? "rotate-y-180" : ""
+        }`}
+      >
         {/* Front */}
         <div className="absolute w-full h-full bg-[#2b2b2b] rounded-xl flex flex-col items-center justify-center backface-hidden border border-[#333] shadow-md">
           <img src={service.icon} alt={service.title} className="w-16 h-16 mb-4" />
