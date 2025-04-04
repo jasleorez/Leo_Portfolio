@@ -1,5 +1,7 @@
 // src/pages/AboutPage.jsx
-import React from "react";
+import React, { useEffect, useRef }  from "react";
+import { useLocation } from "react-router-dom";
+
 import AboutNavbar from "../components/AboutNavbar";
 import { LoadingScreen } from "../components/LoadingScreen";
 import { Me } from "../components/sections/Me";
@@ -16,6 +18,18 @@ import "../App.css";
 import "../index.css";
 
 const AboutPage = ({ isLoaded, setIsLoaded, menuOpen, setMenuOpen }) => {
+
+  const location = useLocation();
+  const certificationsRef = useRef(null);
+
+  useEffect(() => {
+    if (location.state?.scrollToCerts && certificationsRef.current) {
+      setTimeout(() => {
+        certificationsRef.current.scrollIntoView({ behavior: "smooth" });
+      }, 100);
+    }
+  }, [location]);
+
   return (
     <>
       {!isLoaded && <LoadingScreen onComplete={() => setIsLoaded(true)} />}
@@ -27,7 +41,7 @@ const AboutPage = ({ isLoaded, setIsLoaded, menuOpen, setMenuOpen }) => {
         <AboutNavbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <MobileMenuAboutPage menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <Me />
-        <Certifications />
+        <Certifications ref={certificationsRef} />
         <Works />
         <SkillsAbout />
         <GallerySection />

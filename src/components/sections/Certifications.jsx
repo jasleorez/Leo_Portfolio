@@ -1,3 +1,5 @@
+import React, {forwardRef}  from "react";
+
 const certificates = [
   {
     title: "Google Analytics for Beginners",
@@ -42,9 +44,9 @@ const certificates = [
 ];
 
 
-export const Certifications = () => {
+export const Certifications = forwardRef((props, ref) =>  {
   return (
-    <section id="certifications" className="py-16 bg-[#1a1a1a] text-[#ededed]">
+    <section ref={ref} id="certifications" className="py-16 bg-[#1a1a1a] text-[#ededed]">
       <div className="max-w-5xl mx-auto px-4">
         <h2 className="text-4xl font-bold mb-10 text-center bg-gradient-to-r from-[#c1440e] to-[#0b3d25] text-transparent bg-clip-text">
           Certifications
@@ -77,5 +79,8 @@ export const Certifications = () => {
         </div>
       </div>
     </section>
+  
   );
-};
+
+});
+

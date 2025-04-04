@@ -1,7 +1,14 @@
 import { useState } from "react";
 import { RevealOnScroll } from "../RevealOnScroll";
+import { useNavigate } from "react-router-dom";
 
 export const Portfolio = () => {
+  const navigate = useNavigate();
+
+  const handleSeeMoreClick = () => {
+    navigate('/about#certifications', { state: { scrollToCerts: true } });
+  };
+
   const projects = [
     {
       title: "HAU School Department Accreditation Status",
@@ -27,7 +34,7 @@ export const Portfolio = () => {
       image: "https://github.com/jasleorez/Leo_Portfolio/blob/main/assets/simpleProjex.png?raw=true",
       tech: ["React", "NextJS", "Canva", "TailwindCSS"],
     },
-    
+
     {
       title: "Coffee Shop Website",
       category: ["web-design"],
@@ -69,6 +76,8 @@ export const Portfolio = () => {
   const [activeFilter, setActiveFilter] = useState("all");
   const [filteredProjects, setFilteredProjects] = useState(projects);
 
+
+
   const filterProjects = (filter) => {
     setActiveFilter(filter);
     setFilteredProjects(
@@ -104,10 +113,9 @@ export const Portfolio = () => {
               <button
                 key={filter}
                 className={`px-4 py-2 text-sm font-semibold rounded-lg transition h-10 min-w-[120px] text-center
-                  ${
-                    activeFilter === filter
-                      ? "bg-[#c1440e] text-white border-[#c1440e] shadow-md"
-                      : "text-white border border-[#c1440e]/30 hover:bg-[#c1440e]/20"
+                  ${activeFilter === filter
+                    ? "bg-[#c1440e] text-white border-[#c1440e] shadow-md"
+                    : "text-white border border-[#c1440e]/30 hover:bg-[#c1440e]/20"
                   }`}
                 onClick={() => filterProjects(filter)}
               >
@@ -168,13 +176,12 @@ export const Portfolio = () => {
 
           {/* See More */}
           <div className="text-center mt-8">
-            <a
-              href="https://drive.google.com/drive/folders/1GIXnHk9HuN6WSb-1Vw69SykBGuYO-dx3?usp=sharing"
+            <button
+              onClick={handleSeeMoreClick}
               className="text-[#c1440e] hover:text-orange-300 text-lg underline transition"
-              target="_blank" rel="noopener noreferrer"
             >
               See More
-            </a>
+            </button>
           </div>
         </div>
       </RevealOnScroll>
