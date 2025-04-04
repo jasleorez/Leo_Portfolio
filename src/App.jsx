@@ -10,6 +10,7 @@ import { About } from "./components/sections/About";
 import { Portfolio } from "./components/sections/Portfolio";
 import { Skills } from "./components/sections/Skills";
 import { Services } from "./components/sections/Services";
+import { Testimonial } from "./components/sections/Testimonial";
 import { Contact } from "./components/sections/Contact";
 import { Footer } from "./components/Footer";
 
@@ -34,6 +35,7 @@ function MainPage({ isLoaded, setIsLoaded, menuOpen, setMenuOpen }) {
         <Skills />
         <Services />
         <Portfolio />
+        <Testimonial />
         <Contact />
         <Footer />
       </div>
